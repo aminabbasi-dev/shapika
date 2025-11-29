@@ -1,0 +1,127 @@
+{
+  "products": [
+    {
+      "id": "prod_shp_001",
+      "name": "کیف رودوشی زنانه مدل Folks",
+      "price": 980000,
+      "image": "/images/products/bags/women-shoulder-bag-folks.webp",
+      "category": "bags"
+    },
+    {
+      "id": "prod_shp_002",
+      "name": "کفش پیاده‌روی مدل V2K",
+      "price": 4700000,
+      "image": "/images/products/shoes/running-shoes-v2k.webp",
+      "category": "shoes"
+    },
+    {
+      "id": "prod_shp_003",
+      "name": "کفش راحتی مردانه مدل PART-WH",
+      "price": 1300000,
+      "image": "/images/products/shoes/shoes-casual-mens.webp",
+      "category": "shoes"
+    },
+    {
+      "id": "prod_shp_004",
+      "name": "کفش چرمی مردانه کلاسیک",
+      "price": 3900000,
+      "image": "/images/products/shoes/shoes-leather-natural.webp",
+      "category": "shoes"
+    },
+    {
+      "id": "prod_shp_005",
+      "name": "کفش والیبال مردانه مدل 00236365",
+      "price": 1550000,
+      "image": "/images/products/shoes/shoes-volleyball.webp",
+      "category": "shoes"
+    },
+    {
+      "id": "prod_shp_006",
+      "name": "کفش پیاده‌روی مردانه A.S.C.S",
+      "price": 699000,
+      "image": "/images/products/shoes/shoes-walking-ascs.webp",
+      "category": "shoes"
+    },
+    {
+      "id": "prod_shp_007",
+      "name": "هودی مردانه مدل ساروق",
+      "price": 920000,
+      "image": "/images/products/hoodie/hoodie-men-sarouk.webp",
+      "category": "hoodie"
+    },
+    {
+      "id": "prod_shp_008",
+      "name": "هودی مردانه دفکتو (Defacto)",
+      "price": 1150000,
+      "image": "/images/products/hoodie/hoodie-men-defacto.webp",
+      "category": "hoodie"
+    },
+    {
+      "id": "prod_shp_009",
+      "name": "هودی مردانه باینت (Bynite)",
+      "price": 980000,
+      "image": "/images/products/hoodie/hoodie-men-bynite.webp",
+      "category": "hoodie"
+    },
+    {
+      "id": "prod_shp_010",
+      "name": "کیف کراس‌بادی زنانه مدل Benj",
+      "price": 1120000,
+      "image": "/images/products/bags/women-crossbody-bag-benj.webp",
+      "category": "bags"
+    },
+    {
+      "id": "prod_shp_011",
+      "name": "کیف کراس‌بادی مردانه مدل Tom Tac",
+      "price": 1250000,
+      "image": "/images/products/bags/mens-crossbody-bag-tom-tac.webp",
+      "category": "bags"
+    },
+    {
+      "id": "prod_shp_012",
+      "name": "کیف رودوشی مردانه مدل Benj",
+      "price": 1180000,
+      "image": "/images/products/bags/mens-shoulder-bag-benj.webp",
+      "category": "bags"
+    },
+    {
+      "id": "prod_shp_013",
+      "name": "کیف پاسپورتی مردانه چرم مدل عطارد",
+      "price": 1420000,
+      "image": "/images/products/bags/mens-passport-bag-atarod.webp",
+      "category": "bags"
+    }
+  ],
+  "categories": [
+    {
+      "id": "tshirt",
+      "name": "تی‌شرت",
+      "slug": "/category/tshirt"
+    },
+    {
+      "id": "hoodie",
+      "name": "هودی",
+      "slug": "/category/hoodie"
+    },
+    {
+      "id": "jacket",
+      "name": "کاپشن",
+      "slug": "/category/jacket"
+    },
+    {
+      "id": "pants",
+      "name": "شلوار",
+      "slug": "/category/pants"
+    },
+    {
+      "id": "shoes",
+      "name": "کفش",
+      "slug": "/category/shoes"
+    },
+    {
+      "id": "bags",
+      "name": "کیف",
+      "slug": "/category/bags"
+    }
+  ]
+}
