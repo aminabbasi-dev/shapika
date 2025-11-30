@@ -9,11 +9,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ProductCard from "./ProductCard";
-import { Product } from "@/types/product";
+import { IProduct } from "@/types/product";
 import Link from "next/link";
 interface ProductCarouselProps {
   categoryTitle: string;
-  products: Product[];
+  products: IProduct[];
   categoryLink: string;
 }
 

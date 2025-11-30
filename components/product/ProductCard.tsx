@@ -6,9 +6,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/stores/cart";
 import { Minus, Plus } from "lucide-react";
-import { Product } from "../../types/product";
+import { IProduct } from "../../types/product";
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({ product }: { product: IProduct }) {
   const { cartItems, addItem, removeItem } = useCart();
 
   // پیدا کردن محصول در سبد
