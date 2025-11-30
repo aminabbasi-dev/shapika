@@ -50,7 +50,11 @@ Copy code
 1. Clone the repository:
 
 ```bash
+<<<<<<< HEAD
 git clone https://github.com/<YOUR_USERNAME>/shapika.git
+=======
+git clone https://github.com/<aminabbasi-dev>/shapika
+>>>>>>> b5f82e27b9d0f0fae94eadd2f1fb06a5899b6d7a
 cd shapika
 Install dependencies:
 

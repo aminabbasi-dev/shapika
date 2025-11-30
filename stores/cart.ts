@@ -1,19 +1,12 @@
 // src/store/cart.ts
 import { create } from "zustand";
-
-export interface ICartItem {
-  id: number;
-  name: string;
-  price: number;
-  image: string;
-  quantity: number;
-}
+import ICartItem from "../types/carItem";
 
 interface ICartStore {
   cartItems: ICartItem[];
   addItem: (item: Omit<ICartItem, "quantity">) => void;
-  removeItem: (id: number) => void;
-  updateQuantity: (id: number, quantity: number) => void;
+  removeItem: (id: string) => void;
+  updateQuantity: (id: string, quantity: number) => void;
   clearCart: () => void;
   getTotalItems: () => number;
   getTotalPrice: () => number;

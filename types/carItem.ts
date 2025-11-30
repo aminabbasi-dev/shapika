@@ -1,7 +1,7 @@
-export interface IProduct {
+export default interface ICartItem {
   id: string;
   name: string;
   price: number;
   image: string;
-  category: string;
+  quantity: number;
 }
