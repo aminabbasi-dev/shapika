@@ -9,7 +9,7 @@ export default function Home() {
   const products: IProduct[] = db.products;
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-2">
       {categories.map((cat) => {
         const filteredProducts = products.filter((p) => p.category === cat.id);
 
