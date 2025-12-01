@@ -16,7 +16,7 @@ export default function ProductCard({ product }: { product: IProduct }) {
   const quantity = cartItem?.quantity || 0;
 
   return (
-    <div className="border rounded-lg p-2 w-64 text-center shadow-md hover:shadow-md transition-shadow">
+    <div className="border rounded-2xl p-2 w-64 text-center shadow-md hover:shadow-md transition-shadow">
       {/* عکس محصول — پویا */}
       <div className="relative aspect-square mb-3 h-40 bg-gray-100 rounded-md overflow-hidden">
         <Image
