@@ -11,9 +11,13 @@
   --muted: 210 40% 96.1%;
   --muted-foreground: 215.4 16.3% 46.9%;
 
-  /* گرادیانت روشن برای بک‌گراند */
-  --gradient-from: 210 100% 98%; /* کرم روشن */
-  --gradient-to: 210 70% 85%; /* آبی خیلی روشن */
+  /* کارت محصول در تم روشن */
+  --product-card: 45 100% 95%; /* زرد کرمی ملایم */
+  --product-card-border: 40 90% 80%; /* نسخه کمی تیره‌تر برای تمایز */
+
+  /* گرادیانت بک‌گراند */
+  --gradient-from: 210 100% 98%;
+  --gradient-to: 210 70% 85%;
 
   /* گرادیانت لوگو متن */
   --logo-gradient-from: 0 99% 59%;
@@ -30,13 +34,17 @@
   --muted: 217.2 32.6% 17.5%;
   --muted-foreground: 215 20.2% 65.1%;
 
-  /* گرادیانت تاریک برای بک‌گراند */
-  --gradient-from: 217 30% 15%; /* آبی تیره/ خاکستری تیره */
-  --gradient-to: 222 40% 25%; /* بنفش خیلی تیره */
+  /* کارت محصول در تم تاریک */
+  --product-card: 220 15% 14%; /* خاکستری/آبی بسیار تیره */
+  --product-card-border: 220 20% 25%; /* کمی روشن‌تر برای کادر */
 
-  /* گرادیانت لوگو متن در تم تاریک */
-  --logo-gradient-from: 210 80% 60%; /* آبی روشن */
-  --logo-gradient-to: 280 60% 65%; /* بنفش روشن */
+  /* گرادیانت بک‌گراند */
+  --gradient-from: 217 30% 15%;
+  --gradient-to: 222 40% 25%;
+
+  /* گرادیانت لوگو متن */
+  --logo-gradient-from: 210 80% 60%;
+  --logo-gradient-to: 280 60% 65%;
 }
 
 /* جهت‌دهی صفحه */
@@ -44,7 +52,17 @@ html {
   direction: rtl;
 }
 
-/* گرادیانت بک‌گراند */
+/* بک‌گراند گرادیانت */
+body {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--gradient-from)),
+    hsl(var(--gradient-to))
+  );
+  transition: background 0.5s ease;
+}
+
+/* گرادیانت بک اختصاصی */
 .bg-gradient {
   background: linear-gradient(
     135deg,
@@ -53,7 +71,7 @@ html {
   );
 }
 
-/* گرادیانت متن لوگو */
+/* متن لوگو گرادیانت */
 .text-logo-gradient {
   background: linear-gradient(
     90deg,
@@ -65,14 +83,4 @@ html {
   background-clip: text;
   color: transparent;
   font-weight: 700;
-}
-
-/* اضافه کردن ترنزیشن برای تغییر تم */
-body {
-  background: linear-gradient(
-    135deg,
-    hsl(var(--gradient-from)) 0%,
-    hsl(var(--gradient-to)) 100%
-  );
-  transition: background 0.5s ease;
 }

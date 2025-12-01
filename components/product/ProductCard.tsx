@@ -19,9 +19,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const { theme } = useTheme();
   return (
     <div
-      className={`border rounded mb-2   ${
-        theme === "dark" ? "bg-gray-800" : "bg-amber-100"
-      }  p-3 w-[220px] sm:w-[240px] md:w-[260px] lg:w-[280px] text-center shadow-md hover:shadow-lg transition-shadow flex flex-col items-center`}
+      className={`border rounded mb-2 bg-[hsl(var(--product-card))]  p-3 w-[220px] sm:w-[240px] md:w-[260px] lg:w-[280px] text-center shadow-md hover:shadow-lg transition-shadow flex flex-col items-center`}
     >
       {/* عکس محصول */}
       <div className="relative w-full aspect-square mb-2 bg-gray-100 rounded-md overflow-hidden">

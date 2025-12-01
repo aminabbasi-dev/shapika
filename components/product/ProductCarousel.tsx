@@ -23,9 +23,8 @@ const ProductCarousel: React.FC<IProductCarouselProps> = ({
 
   return (
     <section
-      className={`w-full my-4 rounded-2xl px-2 ${
-        theme === "dark" ? color.dark : color.light
-      }`}
+      className={`w-full my-4 rounded-2xl px-2 
+              ${color.light} dark:${color.dark}`}
     >
       <Link
         href={categoryLink}
