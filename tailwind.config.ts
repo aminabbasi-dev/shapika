@@ -2,7 +2,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "class", // حتماً این باشه
+  darkMode: "class", // استفاده از کلاس .dark برای تم تاریک
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -21,11 +21,18 @@ const config: Config = {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
-        // اگر از muted استفاده می‌کنی
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
+      },
+      backgroundImage: {
+        // گرادیانت برای حالت روشن
+        "gradient-light":
+          "linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--accent)) 100%)",
+        // گرادیانت برای حالت تاریک
+        "gradient-dark":
+          "linear-gradient(135deg, hsl(var(--muted)) 0%, hsl(var(--primary)) 100%)",
       },
     },
   },

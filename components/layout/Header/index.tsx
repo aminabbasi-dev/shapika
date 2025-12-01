@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/logo/Logo.png";
@@ -8,8 +9,32 @@ import DesktopSearch from "./DesktopSearch";
 import MobileSearch from "./MobileSearch";
 
 export default function Header() {
+  const [opacity, setOpacity] = useState(0.95); // شفافیت اولیه نزدیک به بک‌گراند بادی
+
+  useEffect(() => {
+    const maxScroll = 300; // حداکثر اسکرول که اثر کامل شود
+    const minOpacity = 0.8; // حد پایین شفافیت، نزدیک رنگ بادی
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      // محاسبه شفافیت تدریجی بر اساس میزان اسکرول
+      const newOpacity =
+        0.95 - ((0.95 - minOpacity) * Math.min(scrollY, maxScroll)) / maxScroll;
+      setOpacity(newOpacity);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 w-full bg-white dark:bg-neutral-800 shadow-sm">
+    <header
+      className="sticky top-0 z-50 shadow-sm transition-all duration-150 backdrop-blur-md"
+      style={{
+        // استفاده از رنگ گلوبال --background با شفافیت متغیر
+        backgroundColor: `hsla(var(--background), ${opacity})`,
+      }}
+    >
       <div className="max-w-screen-xl mx-auto px-4 py-3">
         {/* ردیف اصلی — RTL */}
         <div className="flex items-center justify-between gap-4">
@@ -23,7 +48,7 @@ export default function Header() {
               priority
               className="object-contain"
             />
-            <span className="sm:inline text-2xl font-medium text-red-700 dark:text-white">
+            <span className="sm:inline text-2xl text-logo-gradient">
               شاپیکا
             </span>
           </Link>

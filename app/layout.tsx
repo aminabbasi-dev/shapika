@@ -20,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl" suppressHydrationWarning>
-      <body className={`${vazirmatn.className} antialiased`}>
+      <body
+        className={`${vazirmatn.className} antialiased min-h-screen bg-gradient-light dark:bg-gradient-dark`}
+      >
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           <main>{children}</main>

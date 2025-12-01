@@ -19,7 +19,7 @@ const ProductCarousel: React.FC<IProductCarouselProps> = ({
   color,
 }) => {
   return (
-    <section className={`w-full my-2 rounded-2xl ${color}`}>
+    <section className={`w-full my-2 rounded-2xl ${color} dark:bg-transparent`}>
       <Link
         href={categoryLink}
         className="text-lg w-fit font-bold mb-1 px-4 text-right block"
