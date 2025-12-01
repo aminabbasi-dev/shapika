@@ -35,7 +35,7 @@ export default function Header() {
         backgroundColor: `hsla(var(--background), ${opacity})`,
       }}
     >
-      <div className="max-w-screen-xl mx-auto px-4 py-3">
+      <div className="max-w-screen-xl container mx-auto px-4 py-3">
         {/* ردیف اصلی — RTL */}
         <div className="flex items-center justify-between gap-4">
           {/* لوگو + نام — چپ (اولین آیتم) */}

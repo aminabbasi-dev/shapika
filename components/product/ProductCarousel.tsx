@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useTheme } from "next-themes";
 import {
   Carousel,
   CarouselContent,
@@ -18,16 +19,22 @@ const ProductCarousel: React.FC<IProductCarouselProps> = ({
   categoryLink,
   color,
 }) => {
+  const { theme } = useTheme();
+
   return (
-    <section className={`w-full my-2 rounded-2xl ${color} dark:bg-transparent`}>
+    <section
+      className={`w-full my-4 rounded-2xl px-2 ${
+        theme === "dark" ? color.dark : color.light
+      }`}
+    >
       <Link
         href={categoryLink}
-        className="text-lg w-fit font-bold mb-1 px-4 text-right block"
+        className="text-lg sm:text-xl font-bold mb-2 px-4 block text-right"
       >
         {categoryTitle}
       </Link>
 
-      <div className={`relative container max-w-7xl mx-auto`}>
+      <div className="relative w-full">
         <Carousel
           opts={{
             direction: "rtl",
@@ -38,14 +45,15 @@ const ProductCarousel: React.FC<IProductCarouselProps> = ({
           className="w-full"
         >
           {products && (
-            <CarouselContent className="gap-4">
+            <CarouselContent className="gap-1 sm:gap-1.5 md:gap-2 lg:gap-3 2xl:gap-3.5">
               {products.map((product) => (
                 <CarouselItem
                   key={product.id}
                   className="pl-0"
                   style={{
-                    flex: "0 0 250px",
-                    maxWidth: "250px",
+                    flex: "0 0 auto",
+                    width: "auto",
+                    minWidth: "200px",
                   }}
                 >
                   <ProductCard product={product} />
@@ -54,8 +62,9 @@ const ProductCarousel: React.FC<IProductCarouselProps> = ({
             </CarouselContent>
           )}
 
-          <CarouselPrevious className="right-4 left-auto h-10 w-10 bg-white rounded-full shadow-lg border hover:bg-gray-50" />
-          <CarouselNext className="left-4 right-auto h-10 w-10 bg-white rounded-full shadow-lg border hover:bg-gray-50" />
+          {/* فلش فقط روی لپ‌تاپ */}
+          <CarouselPrevious className="hidden md:flex right-2 md:right-4 left-auto h-10 w-10 bg-white dark:bg-gray-700 rounded-full shadow-lg border hover:bg-gray-50 dark:hover:bg-gray-600 items-center justify-center text-gray-800 dark:text-gray-200 transition-colors duration-300" />
+          <CarouselNext className="hidden md:flex left-2 md:left-4 right-auto h-10 w-10 bg-white dark:bg-gray-700 rounded-full shadow-lg border hover:bg-gray-50 dark:hover:bg-gray-600 items-center justify-center text-gray-800 dark:text-gray-200 transition-colors duration-300" />
         </Carousel>
       </div>
     </section>

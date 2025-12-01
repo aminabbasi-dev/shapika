@@ -30,7 +30,7 @@
     },
     {
       "id": "prod_shp_005",
-      "name": "کفش والیبال مردانه مدل 00236365",
+      "name": "کفش والیبال مردانه مدل vlbl-12یییییییییی",
       "price": 1550000,
       "image": "/images/products/shoes/shoes-volleyball.webp",
       "category": "shoes"
@@ -97,37 +97,55 @@
       "id": "tshirt",
       "name": "تی‌شرت",
       "slug": "/category/tshirt",
-      "color": "bg-blue-200"
+      "color": {
+        "light": "bg-cyan-200",
+        "dark": "bg-cyan-800"
+      }
     },
     {
       "id": "hoodie",
       "name": "هودی",
       "slug": "/category/hoodie",
-      "color": "bg-purple-200"
+      "color": {
+        "light": "bg-violet-200",
+        "dark": "bg-violet-800"
+      }
     },
     {
       "id": "jacket",
       "name": "کاپشن",
       "slug": "/category/jacket",
-      "color": "bg-gray-200"
+      "color": {
+        "light": "bg-stone-200",
+        "dark": "bg-stone-800"
+      }
     },
     {
       "id": "pants",
       "name": "شلوار",
       "slug": "/category/pants",
-      "color": "bg-green-200"
+      "color": {
+        "light": "bg-emerald-200",
+        "dark": "bg-emerald-800"
+      }
     },
     {
       "id": "shoes",
       "name": "کفش",
       "slug": "/category/shoes",
-      "color": "bg-yellow-200"
+      "color": {
+        "light": "bg-amber-200",
+        "dark": "bg-amber-800"
+      }
     },
     {
       "id": "bags",
       "name": "کیف",
       "slug": "/category/bags",
-      "color": "bg-pink-200"
+      "color": {
+        "light": "bg-pink-200",
+        "dark": "bg-pink-800"
+      }
     }
   ]
 }

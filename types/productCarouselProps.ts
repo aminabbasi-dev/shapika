@@ -3,5 +3,5 @@ export default interface IProductCarouselProps {
   categoryTitle: string;
   products: IProduct[];
   categoryLink: string;
-  color: string;
+  color: { light: string; dark: string };
 }

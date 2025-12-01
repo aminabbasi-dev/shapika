@@ -2,5 +2,5 @@ export interface ICategory {
   id: string;
   name: string;
   slug: string;
-  color: string;
+  color: { light: string; dark: string };
 }
