@@ -19,7 +19,7 @@ const ProductCarousel: React.FC<IProductCarouselProps> = ({
   color,
 }) => {
   return (
-    <section className="w-full my-3">
+    <section className={`w-full my-2 mx-2 rounded-2xl ${color}`}>
       <Link
         href={categoryLink}
         className="text-lg w-fit font-bold mb-1 px-4 text-right block"
@@ -27,7 +27,7 @@ const ProductCarousel: React.FC<IProductCarouselProps> = ({
         {categoryTitle}
       </Link>
 
-      <div className={`relative container max-w-7xl mx-auto px-4 ${color}`}>
+      <div className={`relative container max-w-7xl mx-auto`}>
         <Carousel
           opts={{
             direction: "rtl",
