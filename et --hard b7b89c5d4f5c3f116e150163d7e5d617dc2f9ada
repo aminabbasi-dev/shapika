@@ -1,0 +1,44 @@
+[33mcommit 2739db0ce4b8c997937ab04f181a349f783d7fc7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Amin <Amin.abbasi.dev@gmail.com>
+Date:   Mon Dec 1 02:53:47 2025 +0330
+
+    Styled the carousels for consistent spacing and layout.
+
+[33mcommit b7b89c5d4f5c3f116e150163d7e5d617dc2f9ada[m
+Merge: dc4822c b5f82e2
+Author: Amin <Amin.abbasi.dev@gmail.com>
+Date:   Mon Dec 1 01:45:51 2025 +0330
+
+    Resolve all Typescript errors before Deploy
+
+[33mcommit dc4822c4f18674cae60259aa78e642fd9d30bbf3[m
+Author: Amin <Amin.abbasi.dev@gmail.com>
+Date:   Mon Dec 1 01:09:01 2025 +0330
+
+    Deploy error handling
+
+[33mcommit b5f82e27b9d0f0fae94eadd2f1fb06a5899b6d7a[m
+Author: aminabbasi-dev <amin.abbasi.dev@gmail.com>
+Date:   Sun Nov 30 15:24:49 2025 +0330
+
+    Add liara.json configuration file
+
+[33mcommit 411437f04993277b358f7e8be7da49d0d780b0a4[m
+Author: aminabbasi-dev <amin.abbasi.dev@gmail.com>
+Date:   Sat Nov 29 23:31:51 2025 +0330
+
+    Update clone URL in README.md
+
+[33mcommit 9a9c76bd85816fd5129d99b965b8ace0410de783[m
+Author: aminabbasi-dev <amin.abbasi.dev@gmail.com>
+Date:   Sat Nov 29 18:01:22 2025 +0330
+
+    Enhance README with project details and instructions
+    
+    Expanded README to include project overview, features, tech stack, installation instructions, and usage.
+
+[33mcommit aa25efef8de2e4a06689807a4bb6a8b3d72ad27f[m
+Author: Amin <Amin.abbasi.dev@gmail.com>
+Date:   Sat Nov 29 17:43:40 2025 +0330
+
+    Initial commit: Shapika Shop project

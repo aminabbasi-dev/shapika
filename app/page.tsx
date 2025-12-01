@@ -9,7 +9,7 @@ export default function Home() {
   const products: IProduct[] = db.products;
 
   return (
-    <div className="container">
+    <div className="container mx-2">
       {categories.map((cat) => {
         const filteredProducts = products.filter((p) => p.category === cat.id);
 
@@ -25,6 +25,7 @@ export default function Home() {
                 categoryTitle={cat.name}
                 categoryLink={cat.slug}
                 products={filteredProducts}
+                color={cat.color}
               />
             )}
           </div>

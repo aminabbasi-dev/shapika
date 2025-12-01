@@ -96,32 +96,38 @@
     {
       "id": "tshirt",
       "name": "تی‌شرت",
-      "slug": "/category/tshirt"
+      "slug": "/category/tshirt",
+      "color": "bg-blue-200"
     },
     {
       "id": "hoodie",
       "name": "هودی",
-      "slug": "/category/hoodie"
+      "slug": "/category/hoodie",
+      "color": "bg-purple-200"
     },
     {
       "id": "jacket",
       "name": "کاپشن",
-      "slug": "/category/jacket"
+      "slug": "/category/jacket",
+      "color": "bg-gray-200"
     },
     {
       "id": "pants",
       "name": "شلوار",
-      "slug": "/category/pants"
+      "slug": "/category/pants",
+      "color": "bg-green-200"
     },
     {
       "id": "shoes",
       "name": "کفش",
-      "slug": "/category/shoes"
+      "slug": "/category/shoes",
+      "color": "bg-yellow-200"
     },
     {
       "id": "bags",
       "name": "کیف",
-      "slug": "/category/bags"
+      "slug": "/category/bags",
+      "color": "bg-pink-200"
     }
   ]
 }

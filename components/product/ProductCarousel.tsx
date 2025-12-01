@@ -9,18 +9,14 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ProductCard from "./ProductCard";
-import { IProduct } from "@/types/product";
+import IProductCarouselProps from "../../types/productCarouselProps";
 import Link from "next/link";
-interface ProductCarouselProps {
-  categoryTitle: string;
-  products: IProduct[];
-  categoryLink: string;
-}
 
-const ProductCarousel: React.FC<ProductCarouselProps> = ({
+const ProductCarousel: React.FC<IProductCarouselProps> = ({
   categoryTitle,
   products,
   categoryLink,
+  color,
 }) => {
   return (
     <section className="w-full my-3">
@@ -31,7 +27,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
         {categoryTitle}
       </Link>
 
-      <div className="relative container max-w-7xl mx-auto px-4">
+      <div className={`relative container max-w-7xl mx-auto px-4 ${color}`}>
         <Carousel
           opts={{
             direction: "rtl",
