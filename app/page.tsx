@@ -1,8 +1,8 @@
-import db from "../db.json"; // db.products و db.categories
+import db from "../../db.json"; // db.products و db.categories
 
-import ProductCarousel from "../components/product/ProductCarousel";
-import { IProduct } from "../types/product";
-import { ICategory } from "../types/category";
+import ProductCarousel from "../../components/product/ProductCarousel";
+import { IProduct } from "../../types/product";
+import { ICategory } from "../../types/category";
 
 export default function Home() {
   const categories: ICategory[] = db.categories;
